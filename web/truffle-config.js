@@ -45,8 +45,8 @@
 // const { MNEMONIC, PROJECT_ID } = process.env;
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-// const mnemonic = 'main shoot style shrug inherit example vendor infant cross despair crane obvious';
-const MNEMONIC = 'main shoot style shrug inherit example vendor infant cross despair crane obvious';
+
+const MNEMONIC = '';  //secret phrase of your wallet
 
 module.exports = {
   /**
@@ -85,7 +85,7 @@ module.exports = {
     // Useful for deploying to a public network.
     // Note: It's important to wrap the provider as a function to ensure truffle uses a new provider every time.
     goerli: {
-      provider: () => new HDWalletProvider(MNEMONIC, "wss://goerli.infura.io/ws/v3/1f856493ce634eb8bff6885233a6d6dc"),
+      provider: () => new HDWalletProvider(MNEMONIC, "wss://goerli.infura.io/"),  //infura project link
       network_id: '5',       // Goerli's id
       confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
