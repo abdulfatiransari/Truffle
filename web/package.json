@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@craco/craco": "^6.4.5",
+    "@truffle/hdwallet-provider": "^2.0.17",
+    "datatables.net-staterestore-bs4": "^1.1.1",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.8.0"
+  }
+}
